@@ -7,8 +7,6 @@ import New from "./pages/New";
 import Edit from "./pages/Edit";
 import Diary from "./pages/Diary";
 
-// COMPONENTS
-
 const reducer = (state, action) => {
   let newState = [];
   switch (action.type) {
@@ -37,6 +35,10 @@ const reducer = (state, action) => {
 
 export const DiaryStateContext = React.createContext();
 export const DiaryDispatchContext = React.createContext();
+
+const dummyData = [
+  
+]
 
 function App() {
   const [data, dispatch] = useReducer(reducer, []);
